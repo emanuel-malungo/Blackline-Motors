@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!-- CDN remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- CDN swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Blackline Motors</title>
+
+</head>
+
+<body class="w-full bg-dark-background">
+
+    <!-- Header -->
+    <header class="bg-dark-background text-white py-4 fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-xl font-primary font-bold">
+                <a href="#" class="text-gold hover:text-white transition duration-300">
+                    <i class="ri-steering-2-fill mr-2"></i>Blackline Motors
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex space-x-8">
+                <ul class="flex space-x-8">
+                    <li><a href="#" class="text-white hover:text-gold transition duration-300">Início</a></li>
+                    <li><a href="#featured" class="text-white hover:text-gold transition duration-300">Carros</a></li>
+                    <li><a href="#offers" class="text-white hover:text-gold transition duration-300">Ofertas</a></li>
+                    <li><a href="#about" class="text-white hover:text-gold transition duration-300">Sobre</a></li>
+                    <li><a href="#contact" class="text-white hover:text-gold transition duration-300">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#featured" class="cta-button bg-gold text-dark-background px-5 py-2 rounded-full hover:text-white transition duration-300">
+                    Ver Ofertas <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-white">
+                    <i class="ri-menu-3-line text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="md:hidden absolute top-0 left-0 w-full h-screen bg-dark-secondary bg-opacity-95 flex justify-center items-center transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="absolute top-4 right-4">
+                <button id="close-menu" class="text-white text-3xl">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <ul class="text-white text-xl space-y-8 text-center">
+                <li><a href="#" class="hover:text-gold transition duration-300">Início</a></li>
+                <li><a href="#featured" class="hover:text-gold transition duration-300">Carros</a></li>
+                <li><a href="#offers" class="hover:text-gold transition duration-300">Ofertas</a></li>
+                <li><a href="#about" class="hover:text-gold transition duration-300">Sobre</a></li>
+                <li><a href="#contact" class="hover:text-gold transition duration-300">Contato</a></li>
+                <li class="pt-6">
+                    <a href="#featured" class="bg-gold text-dark-background px-6 py-3 rounded-full hover:bg-orange transition duration-300">
+                        Ver Ofertas <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header end -->
+    
+    <!-- Spacer para o cabeçalho fixo -->
+    <div class="h-16"></div>
+
+    <!-- Swiper Slider com altura ajustada -->
+    <section class="swiper-container w-full relative">
+        <div class="swiper mySwiper h-[85vh] md:h-[90vh]">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-80 z-10"></div>
+                    <img src="https://volantseguros.com.br/wp-content/uploads/2018/11/homem-dirigindo-feliz.png" alt="Banner 1" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="container mx-auto px-4 sm:px-6 text-left text-white z-20 relative h-full flex flex-col justify-center">
+
+                        <div class="max-w-xl fade-in active mx-4 sm:mx-0">
+                            <span class="inline-block bg-gold text-dark-background px-3 py-1 text-sm font-bold rounded-full mb-3 md:mb-4">COLEÇÃO PREMIUM</span>
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-primary font-bold mb-4 md:mb-6 leading-tight">Encontre o carro dos seus sonhos</h2>
+                            <p class="text-base sm:text-lg md:text-xl font-secondary mb-6 md:mb-8 text-gray-300">Experiência de condução excepcional com nossa exclusiva linha de veículos de luxo.</p>
+                            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                                <a href="#featured" class="cta-button bg-gold text-dark-background px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:text-white font-bold transition duration-300 text-center">
+                                    Explorar Veículos
+                                </a>
+                                <a href="#about" class="border border-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-white hover:text-dark-background transition duration-300 text-center">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-80 z-10"></div>
+                    <img src="https://blog.karvi.com.br/wp-content/uploads/2022/04/perguntas-que-voc%C3%AA-deve-fazer-para-o-vendedor-de-carro-na-hora-de-fechar-neg%C3%B3cio.jpg" alt="Banner 2" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="container mx-auto px-4 sm:px-6 text-left text-white z-20 relative h-full flex flex-col justify-center">
+                        <div class="max-w-xl fade-in active mx-4 sm:mx-0">
+                            <span class="inline-block bg-orange text-white px-3 py-1 text-sm font-bold rounded-full mb-3 md:mb-4">EDIÇÃO LIMITADA</span>
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-primary font-bold mb-4 md:mb-6 leading-tight">Desempenho excepcional</h2>
+                            <p class="text-base sm:text-lg md:text-xl font-secondary mb-6 md:mb-8 text-gray-300">Acelere para a emoção com os carros mais rápidos e sofisticados do mercado.</p>
+                            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                                <a href="#featured" class="cta-button bg-orange text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold transition duration-300 text-center">
+                                    Ver Esportivos
+                                </a>
+                                <a href="#contact" class="border border-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-white hover:text-dark-background transition duration-300 text-center">
+                                    Agendar Test Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-80 z-10"></div>
+                    <img src="https://ecodrive.pt/wp-content/uploads/2024/04/tecnologia-carro.jpg" alt="Banner 3" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="container mx-auto px-4 sm:px-6 text-left text-white z-20 relative h-full flex flex-col justify-center">
+                        <div class="max-w-xl fade-in active mx-4 sm:mx-0">
+                            <span class="inline-block bg-gold text-dark-background px-3 py-1 text-sm font-bold rounded-full mb-3 md:mb-4">OFERTAS EXCLUSIVAS</span>
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-primary font-bold mb-4 md:mb-6 leading-tight">Promoções imperdíveis</h2>
+                            <p class="text-base sm:text-lg md:text-xl font-secondary mb-6 md:mb-8 text-gray-300">Descontos especiais em veículos selecionados. Aproveite condições únicas!</p>
+                            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                                <a href="#offers" class="cta-button bg-gold text-dark-background px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:text-white transition duration-300 text-center">
+                                    Ver Promoções
+                                </a>
+                                <a href="#contact" class="border border-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-white hover:text-dark-background transition duration-300 text-center">
+                                    Fale Conosco
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginação reposicionada -->
+            <div class="swiper-pagination bottom-4 !static mt-4"></div>
+            
+            <!-- Botões de navegação reposicionados e responsivos -->
+            <div class="swiper-button-next !hidden sm:!flex !right-4 md:!right-8 !w-10 !h-10 rounded-full bg-gold/60 hover:bg-gold/80 after:!text-lg"></div>
+            <div class="swiper-button-prev !hidden sm:!flex !left-4 md:!left-8 !w-10 !h-10 rounded-full bg-gold/60 hover:bg-gold/80 after:!text-lg"></div>
+        </div>
+    </section>
+    <!-- Swiper Slider End -->
+
+    <!-- Featured Cars Section -->
+    <section id="featured" class="py-20 bg-dark-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <span class="inline-block bg-gold text-dark-background px-3 py-1 text-sm font-bold rounded-full mb-4">DESTAQUE</span>
+                <h2 class="text-4xl font-primary font-bold mb-4 text-white">Carros em Destaque</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Descubra nossa seleção de veículos de alta performance e design elegante para todos os gostos e necessidades.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Car Card 1 -->
+                <div class="car-card bg-dark-background rounded-lg overflow-hidden fade-in">
+                    <div class="relative">
+                        <img src="https://octane.rent/wp-content/uploads/2024/08/mercedes_benz_c200_beige_01-600x400.webp" alt="Car 1" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 right-4 bg-gold text-dark-background text-xs font-bold px-2 py-1 rounded">PREMIUM</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-primary font-bold text-white mb-2">Mercedes C200</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">2023 • Automático</span>
+                            <span class="text-gold font-bold">R$240.000</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-dashboard-3-line mr-2"></i> 211 cv
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-gas-station-fill mr-2"></i> Gasolina
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-timer-line mr-2"></i> 0-100: 7.1s
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-road-map-line mr-2"></i> 5.000 km
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-dark-secondary text-white py-3 rounded-full hover:bg-gold hover:text-dark-background transition duration-300">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="car-card bg-dark-background rounded-lg overflow-hidden fade-in">
+                    <div class="relative">
+                        <img src="https://www.bmw.mn/content/dam/bmw/common/all-models/m-series/m4-coupe/2020/highlights/bmw-4-series-coupe-m-automobiles-sd-individual-01.jpg" alt="Car 2" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 right-4 bg-orange text-white text-xs font-bold px-2 py-1 rounded">SPORT</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-primary font-bold text-white mb-2">BMW M4 Coupé</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">2023 • Automático</span>
+                            <span class="text-gold font-bold">R$580.000</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-dashboard-3-line mr-2"></i> 510 cv
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-gas-station-fill mr-2"></i> Gasolina
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-timer-line mr-2"></i> 0-100: 3.8s
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-road-map-line mr-2"></i> 1.200 km
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-dark-secondary text-white py-3 rounded-full hover:bg-gold hover:text-dark-background transition duration-300">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="car-card bg-dark-background rounded-lg overflow-hidden fade-in">
+                    <div class="relative">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-audi-a6-106-64761a1a30f1d.jpg?crop=0.598xw:0.468xh;0.109xw,0.334xh&resize=1200:*" alt="Car 3" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 right-4 bg-gold text-dark-background text-xs font-bold px-2 py-1 rounded">PREMIUM</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-primary font-bold text-white mb-2">Audi A6</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">2022 • Automático</span>
+                            <span class="text-gold font-bold">R$320.000</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-dashboard-3-line mr-2"></i> 340 cv
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-gas-station-fill mr-2"></i> Gasolina
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-timer-line mr-2"></i> 0-100: 5.1s
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-road-map-line mr-2"></i> 8.500 km
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-dark-secondary text-white py-3 rounded-full hover:bg-gold hover:text-dark-background transition duration-300">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Car Card 4 -->
+                <div class="car-card bg-dark-background rounded-lg overflow-hidden fade-in">
+                    <div class="relative">
+                        <img src="https://www.topgear.com/sites/default/files/2024/11/1-Porsche-911-review-2024.jpg" alt="Car 4" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 right-4 bg-orange text-white text-xs font-bold px-2 py-1 rounded">SPORT</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-primary font-bold text-white mb-2">Porsche 911</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-400">2023 • Automático</span>
+                            <span class="text-gold font-bold">R$950.000</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-dashboard-3-line mr-2"></i> 450 cv
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-gas-station-fill mr-2"></i> Gasolina
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-timer-line mr-2"></i> 0-100: 3.4s
+                            </div>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i class="ri-road-map-line mr-2"></i> 2.100 km
+                            </div>
+                        </div>
+                        <a href="#" class="block text-center bg-dark-secondary text-white py-3 rounded-full hover:bg-gold hover:text-dark-background transition duration-300">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-gold text-dark-background px-8 py-4 rounded-full font-bold hover:bg-orange transition duration-300">
+                    Ver Todos os Carros <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Cars Section End -->
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-20 bg-dark-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <span class="inline-block bg-orange text-white px-3 py-1 text-sm font-bold rounded-full mb-4">PROMOÇÃO</span>
+                <h2 class="text-4xl font-primary font-bold mb-4 text-white">Ofertas Especiais</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Aproveite nossas condições exclusivas por tempo limitado em veículos selecionados.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Offer 1 -->
+                <div class="bg-dark-secondary rounded-lg overflow-hidden fade-in">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 relative">
+                            <img src="https://bmw.scene7.com/is/image/BMW/g20_ice_ext_kidney?wid=3000&hei=3000" alt="Offer 1" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+                                -15%
+                            </div>
+                        </div>
+                        <div class="md:w-3/5 p-6">
+                            <h3 class="text-xl font-primary font-bold text-white mb-2">BMW Série 3</h3>
+                            <div class="flex items-center mb-4">
+                                <span class="text-gray-400 line-through mr-3">R$290.000</span>
+                                <span class="text-gold text-xl font-bold">R$246.500</span>
+                            </div>
+                            <p class="text-gray-400 mb-6">Sedan de luxo com acabamento premium, tecnologia de ponta e desempenho excepcional.</p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">2023</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">258 cv</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">Automático</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">0 km</span>
+                            </div>
+                            <a href="#" class="inline-block bg-gold text-dark-background px-6 py-3 rounded-full font-bold hover:bg-orange transition duration-300">
+                                Aproveitar Oferta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="bg-dark-secondary rounded-lg overflow-hidden fade-in">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 relative">
+                            <img src="https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/glc/suv-x254/overview/highlights/03-2023/images/mercedes-benz-glc-suv-x254-highlights-exterior-3302x1858-03-2023.jpg/1740017735234.jpg?im=Resize=(1280);Crop,rect=(0,0,1280,720)" alt="Offer 2" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+                                -12%
+                            </div>
+                        </div>
+                        <div class="md:w-3/5 p-6">
+                            <h3 class="text-xl font-primary font-bold text-white mb-2">Mercedes GLC</h3>
+                            <div class="flex items-center mb-4">
+                                <span class="text-gray-400 line-through mr-3">R$420.000</span>
+                                <span class="text-gold text-xl font-bold">R$369.600</span>
+                            </div>
+                            <p class="text-gray-400 mb-6">SUV de luxo com design sofisticado, interior espaçoso e conforto incomparável.</p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">2022</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">300 cv</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">Automático</span>
+                                <span class="bg-dark-background text-gray-400 text-xs px-3 py-1 rounded-full">3.200 km</span>
+                            </div>
+                            <a href="#" class="inline-block bg-gold text-dark-background px-6 py-3 rounded-full font-bold hover:bg-orange transition duration-300">
+                                Aproveitar Oferta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border border-gold text-gold px-8 py-4 rounded-full font-bold hover:bg-gold hover:text-dark-background transition duration-300">
+                    Ver Todas as Ofertas <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Special Offers Section End -->
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-dark-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <span class="inline-block bg-gold text-dark-background px-3 py-1 text-sm font-bold rounded-full mb-4">DEPOIMENTOS</span>
+                <h2 class="text-4xl font-primary font-bold mb-4 text-white">O que nossos clientes dizem</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Descubra o que nossos clientes satisfeitos compartilham sobre sua experiência conosco.</p>
+            </div>
+
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-dark-background p-8 rounded-lg customer-quote fade-in">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full bg-gray-700 overflow-hidden mr-4">
+                                    <img src="https://ca.slack-edge.com/T06KHJY3SEB-U06QSJ7LTAM-c5a000a1a89c-48" alt="Client 1" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-primary font-bold text-white">Emanuel Malungo</h4>
+                                    <div class="flex text-gold">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Excelente atendimento e veículos de alta qualidade. Estou muito satisfeito com minha compra!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-dark-background p-8 rounded-lg customer-quote fade-in">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full bg-gray-700 overflow-hidden mr-4">
+                                    <img src="https://ca.slack-edge.com/T06KHJY3SEB-U06Q2FLC5RT-7697ef40681e-72" alt="Client 2" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-primary font-bold text-white">Lourenço António</h4>
+                                    <div class="flex text-gold">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"A experiência de compra foi incrível. Recomendo a todos que procuram um carro de luxo."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-dark-background p-8 rounded-lg customer-quote fade-in">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full bg-gray-700 overflow-hidden mr-4">
+                                    <img src="https://ca.slack-edge.com/T06KHJY3SEB-U06SXJZ2ZLN-05ccd03e2a8f-192" alt="Client 3" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-primary font-bold text-white">António Pedro</h4>
+                                    <div class="flex text-gold">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Veículos de alta performance e atendimento de primeira. Estou muito satisfeito com minha compra."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Footer -->
+    <footer class="bg-dark-background py-12">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2025 Blackline Motors. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
